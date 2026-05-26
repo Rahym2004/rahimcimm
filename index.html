@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>图书商城</title>
+<link rel="stylesheet" href="lab6-2501-070-index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h2>
+    <span class="logo-white">DUFRESNE</span>
+    <span class="logo-orange">BOOKSHOP·WELCOME!</span>
+</h2>
+    <span onclick="showLogin()">登录/注册</span>
+</header>
+
+<div class="container">
+
+    <div class="left">
+    <h2>图书分类</h2>
+    <ul>
+        <li>小说</li>
+        <li>故事</li>
+        <li>科学</li>
+        <li>历史</li>
+    </ul>
+
+    
+    <div class="ad-slider">
+        <img src="img/REKL1.jpg">
+        <img src="img/REKL2.jpg">
+        <img src="img/book20.webp">
+    </div>
+</div>
+
+    <div class="main">
+        <h2>热门推荐</h2>
+        <div class="search-container" style="text-align: center; margin: 20px 0;">
+    <input type="text" id="searchInput" placeholder="搜索书名、作者或分类 (Gözleg: Kitap ady ýa-da awtor)" 
+           style="padding: 12px 20px; width: 80%; border-radius: 25px; border: 2px solid #ff9900; outline: none; font-size: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+</div>
+    <div class="slider">
+    <img src="img/book10.jpg">
+    <img src="img/book11.jpg">
+    <img src="img/book12.jpg">
+</div>
+        
+             
+        <div class="books">
+        
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book1.jpg" alt="book">
+            <p>太宰治 - 人间失格</p >
+            <span>￥45</span>
+        </div>
+        <div class="book-back">
+            <h4>人间失格</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;">太宰治的经典代表作，深度剖析人性...</p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book2.jpg" alt="book">
+            <p>余华 - 活着</p >
+            <span>￥50</span>
+        </div>
+        <div class="book-back">
+            <h4>活着</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;">余华的经典作品，讲述了一个关于生存和希望的故事...</p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book3.jpg" alt="book">
+            <p>钱钟书 - 围城</p >
+            <span>￥39</span>
+        </div>
+        <div class="book-back">
+            <h4>围城</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;">余华的经典作品，讲述了一个关于生存和希望的故事...</p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book4.jpg" alt="book">
+            <p>卡勒德 - 追风筝的人</p >
+            <span>￥55</span>
+        </div>
+        <div class="book-back">
+            <h4>追风筝的人</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;">卡勒德·胡赛尼的经典作品，讲述了一个关于友谊和救赎的故事...</p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book41.jfif" alt="book">
+            <p>莫言 - 红高高粱家族</p >
+            <span>￥50</span>
+        </div>
+        <div class="book-back">
+            <h4>红高粱家族</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;"> 以中国农村为背景，描写战争年代一个家族的爱情、生活与残酷命运。</p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book42.jpeg" alt="book">
+            <p>刘慈欣 - 三体</p >
+            <span>￥39</span>
+        </div>
+        <div class="book-back">
+            <h4>三体</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;">人类与外星文明“三体人”接触后发生的科幻故事，涉及科学、宇宙与文明冲突。     </p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book40.webp" alt="book">
+            <p>路遥 - 平凡的世界</p >
+            <span>￥55</span>
+        </div>
+        <div class="book-back">
+            <h4>平凡的世界</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;">讲述普通农村青年在生活、爱情和奋斗中的成长故事，展现真实人生的艰辛与希望。</p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+<div class="book-card">
+    <div class="book-inner">
+        <div class="book-front">
+            <img src="img/book44.jfif" alt="book">
+            <p>吴承恩 - 西游记</p >
+            <span>￥50</span>
+        </div>
+        <div class="book-back">
+            <h4>西游记</h4>
+            <p style="font-size: 12px; color: #666; margin: 10px 0;">孙悟空和师徒四人前往西天取经的神话冒险故事，充满奇幻与传奇色彩。</p >
+            <p style="color: #ff9900;">评分: * * * * *</p >
+            <button>购买 (Satyn Al)</button>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+
+    </div>
+
+    <div class="right">
+    <h3>广告</h3>
+    
+    <div class="promo-card">
+        <span class="badge">限时折扣</span>
+        <h2>满 100 减 20. 请通过13405353900联系广告服务。</h2>
+        <p>全场图书适用</p >
+        <button class="promo-btn">立即领取</button>
+    </div>
+</div>
+
+</div>
+
+<div id="box" class="box">
+    <div id="login">
+        <h3>登录</h3> 
+        <input id="u" placeholder="用户名">
+        <input id="p" type="password" placeholder="密码">
+        <button onclick="login()">登录</button>
+        <p onclick="showReg()">去注册</p >
+    </div>
+
+    <div id="reg" style="display:none;">
+    <h3>注册 (Hasaba Alyş)</h3>
+    
+    <input id="ru" placeholder="邮箱或手机号 (Email ýa-da Telefon)">
+    <span id="uError" style="color:red; font-size:12px; display:block; height: 18px; margin-bottom: 5px;"></span>
+    
+    <input id="rp" type="password" placeholder="密码 (Parol)">
+    <div id="pwdStrength" style="font-size:12px; margin-bottom: 15px; text-align: left;">
+        密码强度 (Parol güýji): <span id="strengthText" style="font-weight: bold;">无</span>
+    </div>
+    
+    <button onclick="registerUser()" style="width: 100%;">注册</button>
+    <p onclick="showLogin()" style="cursor:pointer; color: #ff9900; margin-top: 10px;">去登录 (Giriş sahypasyna)</p >
+</div>
+</div>
+
+<script>
+function showLogin(){
+    document.getElementById("box").style.display="block";
+    document.getElementById("login").style.display="block";
+    document.getElementById("reg").style.display="none";
+}
+
+function showReg(){
+    document.getElementById("login").style.display="none";
+    document.getElementById("reg").style.display="block";
+}
+
+function reg(){
+    localStorage.setItem("u",document.getElementById("ru").value);
+    localStorage.setItem("p",document.getElementById("rp").value);
+    alert("注册成功");
+    showLogin();
+}
+
+function login(){
+    if(
+        document.getElementById("u").value==localStorage.getItem("u") &&
+        document.getElementById("p").value==localStorage.getItem("p")
+    ){
+        alert("登录成功");
+    }else{
+        alert("错误");
+    }
+}
+</script>
+<section class="price-table-section">
+    <h2 class="section-title">图书价格与折扣</h2>
+    <table class="book-table">
+        <thead>
+            <tr>
+                <th>书名</th>
+                <th>原价</th>
+                <th>折扣</th>
+                <th>现价</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>人间失格 (No Longer Human)</td>
+                <td>¥45</td>
+                <td class="discount">-10%</td>
+                <td>¥40.5</td>
+            </tr>
+            <tr>
+                <td>活着 (To Live)</td>
+                <td>¥50</td>
+                <td class="discount">-20%</td>
+                <td>¥40</td>
+            </tr>
+            <tr>
+                <td>围城 (Fortress Besieged)</td>
+                <td>¥39</td>
+                <td class="discount">-15%</td>
+                <td>¥33.1</td>
+            </tr>
+            <tr>
+                <td>追风筝的人 (The Kite Runner)</td>
+                <td>¥55</td>
+                <td class="discount">-5%</td>
+                <td>¥52.2</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<footer>
+    <div class="social-info-container">
+    <div class="social-badge telegram">
+        <div class="icon-part"><i class="fab fa-telegram-plane"></i></div>
+        <span class="text-part">@rahimcimm_55 or 13405353900</span>
+    </div>
+    
+    <div class="social-badge instagram">
+        <div class="icon-part"><i class="fab fa-instagram"></i></div>
+        <span class="text-part">rahimc.imm_55</span>
+    </div>
+    
+    <div class="social-badge email">
+        <div class="icon-part"><i class="fas fa-envelope"></i></div>
+        <span class="text-part">synag2025@gmail.com</span>
+    </div>
+
+    <div class="social-badge twitter">
+        <div class="icon-part"><i class="fab fa-x-twitter"></i></div>
+        <span class="text-part">抖音：rahimcimm_55</span>
+    </div>
+</div>
+    <div class="footer-container">
+        <p>&copy; 2026 <b>DUFRESNE BOOKSHOP</b>. 版权所有。</p >
+        <p class="author-info">
+            作者：<span class="author-name">Rahymguly ÇARYÝARGULYÝEWIÇ ANNALYÝEW</span>
+        </p >
+    </div>
+</footer>
+<script src="lab6-2501-070-index.js"></script>
+</body>
+</html>
